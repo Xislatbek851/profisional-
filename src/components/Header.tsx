@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useDarkMode } from '../hooks/useDarkMode';
+import Logo from './Logo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,12 +15,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-gray-900">
-            Xislatbek Alimov
-          </div>
+          <Logo variant="full" size="md" className="cursor-pointer" />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
@@ -27,7 +26,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
@@ -78,7 +77,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-100">
+          <nav className="md:hidden py-4 border-t border-gray-100 dark:border-gray-800">
             {navItems.map((item) => (
               <a
                 key={item.href}
