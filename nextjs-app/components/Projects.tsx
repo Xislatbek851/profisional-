@@ -1,8 +1,5 @@
 import React from 'react';
 import { ExternalLink, Github, Folder, Calendar, Users, Zap } from 'lucide-react';
-import Whitespace from '../img/544_1x_shots_so.png';
-import FiboPizza from '../img/862shots_so.png';
-import Glogara from '../img/807shots_so.png';
 
 const Projects = () => {
   const projects = [
@@ -12,7 +9,7 @@ const Projects = () => {
       technologies: ['React', 'Firebase', 'Tailwind CSS', 'TypeScript'],
       type: 'Web Application',
       highlights: ['Real-time Sync', 'Team Collaboration', 'Drag & Drop'],
-      image: Glogara ,
+      image: '/img/807shots_so.png' ,
       gradient: 'from-blue-500 to-purple-600',
       icon: Calendar,
       liveUrl: '#',
@@ -24,7 +21,7 @@ const Projects = () => {
       technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
       type: 'Website',
       highlights: ['Smooth Animations', 'SEO Optimized', 'Performance'],
-      image: Whitespace,
+      image: '/img/544_1x_shots_so.png',
       gradient: 'from-green-500 to-teal-600',
       icon: Users,
 
@@ -35,7 +32,7 @@ const Projects = () => {
       technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Vite'],
       type: 'Portfolio',
       highlights: ['Dark Mode', 'Responsive', 'Modern Design'],
-      image: FiboPizza,
+      image: '/img/862shots_so.png',
       gradient: 'from-purple-500 to-pink-600',
       icon: Zap,
       liveUrl: '#',

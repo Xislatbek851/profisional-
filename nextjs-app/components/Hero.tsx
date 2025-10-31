@@ -1,6 +1,5 @@
 import React from 'react';
 import { MapPin, Calendar, ExternalLink, Github, Mail, Phone, LogOutIcon } from 'lucide-react';
-import Logotype from '../img/image.png'
 const Hero = () => {
   return (
     <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
@@ -8,7 +7,7 @@ const Hero = () => {
         <div className="text-center mb-12">
           <div className="inline-block p-1 mt-24 bg-gradient-to-r  rounded-full mb-3">
             <div className="w-24 h-24  bg-white dark:bg-gray-800 rounded-full flex items-center justify-center transition-colors duration-300">
-              <img src={Logotype} alt="logo" className='rounded-[50%] w-full h-full '/>
+              <img src="/img/image.png" alt="logo" className='rounded-[50%] w-full h-full '/>
             </div>
           </div>
           
