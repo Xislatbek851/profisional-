@@ -6,13 +6,26 @@ import Glogara from '../img/807shots_so.png';
 
 const Projects = () => {
   const projects = [
+    
+      {
+      title: 'Fibo Pizza',
+      description: 'A stylish pizza ordering website featuring mouth-watering visuals, smooth animations, and a responsive design that delivers a delightful and seamless online food-ordering experience.',
+      technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Vite'],
+      type: 'Portfolio',
+      highlights: ['Dark Mode', 'Responsive', 'Modern Design'],
+      image: FiboPizza,
+      gradient: 'from-purple-500 to-pink-600',
+      icon: Zap,
+      liveUrl: '#',
+      githubUrl: '#'
+    },
     {
       title: 'Globara',
       description: 'A modern import-export website featuring a global business theme, sleek animations, responsive design, and a professional layout built for seamless international trade connections.',
       technologies: ['React', 'Firebase', 'Tailwind CSS', 'TypeScript'],
       type: 'Web Application',
       highlights: ['Real-time Sync', 'Team Collaboration', 'Drag & Drop'],
-      image: Glogara ,
+      image: Glogara,
       gradient: 'from-blue-500 to-purple-600',
       icon: Calendar,
       liveUrl: '#',
@@ -28,18 +41,6 @@ const Projects = () => {
       gradient: 'from-green-500 to-teal-600',
       icon: Users,
 
-    },
-    {
-      title: 'Fibo Pizza',
-      description:'A stylish pizza ordering website featuring mouth-watering visuals, smooth animations, and a responsive design that delivers a delightful and seamless online food-ordering experience.' ,
-      technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Vite'],
-      type: 'Portfolio',
-      highlights: ['Dark Mode', 'Responsive', 'Modern Design'],
-      image: FiboPizza,
-      gradient: 'from-purple-500 to-pink-600',
-      icon: Zap,
-      liveUrl: '#',
-      githubUrl: '#'
     }
   ];
 
@@ -71,7 +72,7 @@ const Projects = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
-                  
+
                   {/* Project Type Badge */}
                   <div className="absolute top-4 left-4">
                     <span className="text-xs font-medium text-white bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full border border-white/20">
