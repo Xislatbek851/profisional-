@@ -94,7 +94,7 @@ const Footer = () => {
               © {currentYear} Xislatbek Alimov. All rights reserved.
             </p>
             <div className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 text-sm">
-              <span>Made with</span>
+              <span>Made with heart</span>
               <span>using React & Tailwind CSS</span>
             </div>
           </div>
