@@ -3,6 +3,8 @@ import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useDarkMode } from '../hooks/useDarkMode';
 import Logo from './Logo';
 
+import logo from '../img/image.png';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isDark, toggleDarkMode } = useDarkMode();
@@ -18,7 +20,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Logo variant="full" size="md" className="cursor-pointer" />
+          {/* <Logo variant="full" size="md" className="cursor-pointer" /> */}
+
+          <img src={logo} alt="logo" className='rounded-full w-10' />
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
