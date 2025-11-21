@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useDarkMode } from '../hooks/useDarkMode';
 import Logo from './Logo';
-
-import logo from '../img/image.png';
+import logo from '../img/frontend_embedded (1).svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,10 +19,13 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* <Logo variant="full" size="md" className="cursor-pointer" /> */}
-
-          <img src={logo} alt="logo" className='rounded-full w-10' />
-
+          <div className='grid grid-cols-2 w-[110px] h-10 gap-2'>
+            <img src={logo} alt="logo" className='rounded-full w-full' />
+            <div className='grid grid-cols-1 mt-2'>
+              <h1 className='font-bold text-[20px] leading-[100%] dark:text-white'>Xislatbek</h1>
+              <h2 className='text-gray-400 font-medium text-[12px] mt-[-3px]'>Developer</h2> 
+            </div>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
